@@ -1,0 +1,233 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+          <input type="text" placeholder="Search transactions,invoices or help" class="input">
+        </div>
+        <div class="header-right">
+          
+        
+          <div class="profile">
+            <span class="material-icons-outlined">notifications</span>
+            <span id="nm"> John Doe </span>
+            
+            <img src="images/name.jpeg" alt="">
+          </div>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="mater"></span> A C M E
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="fa fa-home"></span>  Home
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="fa fa-signal"></span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="fa fa-envelope"></span> Inbox
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="fa fa-bars"></span>  Products
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="fas fa-gear">  </span>  Settings
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">Overview</p>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Staistics</p>
+              <p class="mat">Last 6 months</p>
+            </div>
+          
+            <span class="text-primary font-weight-bold"></span>
+            <div class="charts">
+              <div class="charts-card">
+                <p class="chart-title"></p>
+                <div id="area-chart"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Seles Distribition</p>
+              <span class="material"></span>
+            </div>
+         
+            <span class="text-primary font-weight-bold"></span>
+            <div class="charts">
+              <div class="charts-card">
+                <p class="chart-title"></p>
+                <div id="bar-chart"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary"></p>
+              <span class="material"></span>
+            </div>
+            <div class="im">
+            <img src="images/name.jpeg" alt="">
+            <p>Nick Herasimenk</p>
+            <span>United States</span><br>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <hr style="width: 300px;position: relative;right: 88px; top: 10px;">
+            </div>
+            <div class="users">
+              <ul>
+                <h4  style="position: relative; right: 46px;top: 25px; font-size: 19px; font-weight: normal;">Our Users </h4><span ><i class="fa fa-ellipsis-vertical"></i> </span>
+                <li><img src="images/9sXOpCRM.jpeg" alt=""><span>Drew james</span> <p>United States&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mobile:9856231478</p></li>
+                <li><img src="images/NGrPnAD8.jpeg" alt=""><span>Bavid kames</span><p>United States&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mobile:9856231478</p></li>
+                <li><img src="images/IV3GNDDE.jpeg" alt=""><span>Lavid Emes</span><p>United States&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mobile:9856231478</p></li>
+              </ul>
+            </div>
+            <div>
+              
+            </div>
+            
+            <span class="text-primary font-weight-bold"></span>
+          </div>
+
+          
+
+        </div>
+
+        <div class="list">
+
+          <div class="list-card">
+            <p class="chart-title">Referrer</p>
+            <div id="br-chart">
+              <table>
+                <tr>
+                <th>Location</th>
+                <th>Views</th>
+                <th>Sales</th>
+                <th>Conversion</th>
+                <th>Total</th>
+                </tr>
+                <tr>
+               <td>Google.com</td>
+               <td>3746</td>
+               <td>752</td>
+               <td>43%</td>
+               <td>$19,291</td>
+               </tr>
+               <tr>
+                <td>facebook.com</td>
+                <td>8126</td>
+                <td>728</td>
+                <td>32%</td>
+                <td>$17,638</td>
+                </tr>
+                <tr>
+                  <td>twitter.com</td>
+                  <td>3746</td>
+                  <td>752</td>
+                  <td>43%</td>
+                  <td>$19,291</td>
+                  </tr>
+                  <tr>
+                    <td>Direct,email,IM.com</td>
+                    <td>3746</td>
+                    <td>752</td>
+                    <td>43%</td>
+                    <td>$19,291</td>
+                    </tr>
+                    <tr>
+                      <td>linkedin.com</td>
+                      <td>3746</td>
+                      <td>752</td>
+                      <td>43%</td>
+                      <td>$19,291</td>
+                      </tr>
+                      <tr>
+                        <td>instagram.com</td>
+                        <td>3746</td>
+                        <td>752</td>
+                        <td>43%</td>
+                        <td>$19,291</td>
+                        </tr>
+              </table>
+
+                  <a href="#">Show More</a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
